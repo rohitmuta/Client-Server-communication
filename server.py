@@ -44,19 +44,6 @@ class ClientThread(Thread):
                 var1 = str(sock_family) +'#'+ str(sock_type) +'#'+str(sock_proto)+'#'+str(sock_timeout)
                 conn.send(bytes(var1.encode()))
                 continue
-            # Localhost access to client (Not working)
-            #elif local_host in received:
-            #    PORT2 = 8080
-            #    Handler = http.server.SimpleHTTPRequestHandler
-            #    httpd = socketserver.TCPServer(("", PORT2), Handler)
-            #    print("Server at PORT : ", PORT2)
-            #    try:
-            #        httpd.settimeout(10)  # timout for 20 secs coz server running in same thread
-            #        httpd.serve_forever()
-
-            #    except:
-            #        print('Timeout!')
-            #        break
 
             elif send in received:
                 filename = received[5:]
