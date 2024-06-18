@@ -1,5 +1,3 @@
-#...Code by Rohitashwa Mahuli - 1002091557 - rxm1557
-
 # Python TCP Client 1
 import socket
 import time
