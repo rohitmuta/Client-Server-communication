@@ -1,4 +1,3 @@
-## This server/code belongs to Rohitashwa Mahuli - 1002091557 - rxm1557
 import socket
 from threading import Thread
 import webbrowser
